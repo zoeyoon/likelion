@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    box-sizing: border-box; 
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card {
+    width: 400px;
+    height: 600px;
+    background-color : white;
+    border-radius : 25px;
+    padding-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+    
+.title{
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.note {
+    text-align: center;
+    font-weight: 500;
+    color: var(--Desaturated-blue)
+}
+    
+.hero-illustration{
+    width:400px;
+    border-radius: 25px 25px 0 0;
+}
+
+.informations {
+    margin: 12px 12px 25px 12px;
+    padding: 10px 20px;
+    background-color: var(--Very-pale-blue);
+    height: 80px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.price{
+    display: inline;
+    margin-inline-start: 20px;
+    margin-inline-end: 70px;
+    font-weight: 500;
+    color: var(--Desaturated-blue)
+}
+
+.annual{
+    display: inline;
+    margin-inline-start: 20px;
+    font-weight: 700;
+    color: var(--Dark-blue)
+}
+
+.change {
+    float: right;
+    font-weight: 700;
+    color: var(--Bright-blue)
+}
+
+.music_icon{
+    width: 13%;
+    float: left;
+}
+
+.btn {
+    background-color: var(--Bright-blue);
+    color: white;
+    width: 300px;
+    height: 50px;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.9rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 8px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--Dark-blue);
+} 
+
+.Cancel-Order {
+    color: var(--Desaturated-blue);
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    padding: 15px 10px 10px 15px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        width: 320px;
+        padding-bottom: 30px;
+    }
+
+    .hero-illustration{
+      width:320px;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .informations {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        width: 250px;
+        height: 50px;
+        padding-top: 1rem;
+    }
+
+    .note {
+        padding: 1.4rem 0.6rem;
+    }
+
+    .music_icon {
+        width: 13%;
+        float:left;
+    }
+
+    .annual {
+      margin-inline-start: 20px;
+    }
+
+    .price {
+      margin-inline-start: 20px;
+      margin-inline-end: 10px;
+    }
+}
