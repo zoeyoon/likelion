@@ -1,0 +1,61 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.title {
+  text-align: center;
+  font-size: 50px;
+  margin: 0px 0px 0px 0px;
+}
+.users {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 50px;
+  padding-top: 30px;
+  width: 80%;
+  margin: auto;
+}
+
+.users .users__user {
+  width: 40%;
+  background-color: #bcd3f6;
+  margin-bottom: 70px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-weight: 300;
+  padding: 20px;
+  border-radius: 5px;
+  color: black;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+.users .user__data {
+  margin: auto;
+}
+.users .user__name {
+  font-size: 40px;
+  margin: 20px 0px 20px 0px;
+}
+
+.users .user__id {
+  margin: 0px;
+}
+
+.users .user__username {
+  font-size: 25px;
+  margin: 20px 0px 20px 0px;
+  color: #505254;
+}
+
+.users .user__email {
+  margin: 20px 0px 20px 0px;
+  font-size: 15px;
+}
+.users .userImg {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
